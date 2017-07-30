@@ -1,0 +1,114 @@
+.tovars-wr	{
+	display: inline-block;
+	vertical-align: top;
+	width: ~'calc(100% - 320px)';
+	padding-bottom: 50px;
+	@media @tablet-widths {
+		width: ~'calc(100% - 280px)';
+	}
+	@media @mobil-widths {
+		width: auto;
+		display: block;
+	}	
+}
+
+.tovar-item {
+		height: 350px;
+		padding: 45px 17px 30px;
+		
+		border-bottom: 1px solid #d9d9d9;
+	}
+
+.tovar-item-slider {
+	position: relative;
+	display: inline-block;            
+	width: 281px;
+    margin: 30px 8px;
+    padding: 0 10px;
+}
+
+.tovar-card {
+	display: block;
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto;
+
+
+	&__img {
+		width: 100%;
+		height: 200px;
+		background-color: #f0f0f0;
+		background-size: auto;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 10;
+	}
+
+	&__popup-btn {
+		display: block;
+		width: 100%;
+		position: absolute;
+		z-index: 11;
+		bottom: 0;
+		opacity: 0;
+		cursor: pointer;
+		overflow: hidden;
+		.clerfix();
+
+		transition: opacity ease-out 0.5s,
+					color ease-out 0.3s;
+
+		@media @mobil-widths{
+			opacity: 1;
+		}
+
+		.popup-btn {
+			display: inline-block;
+			float: left;
+			width: 50%;
+			height: 30px;
+			line-height: 30px;
+			.roboto-reg(15px);
+			background-color: #000;
+			border-left: 1px solid #333333;
+			border-rigt: 1px solid #333333;
+			text-align: center;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
+		.popup-btn:hover, .popup-btn:active, .popup-btn:focus {
+			text-decoration: none;
+			color: @color-yellow;
+		}
+	}
+
+	&__title, &__subtitle {
+		width: 100%;
+		color: @color-text-b;
+		.roboto-reg(17px);
+		line-height: 1.3;
+		padding-bottom: 5px;
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	&__subtitle {
+		font-size: 12px;
+	}
+
+	&__price {
+		width: 100%;
+		color: @color-text-b;
+		.roboto-bold(17px);
+		padding-top: 10px;
+		border-top: 1px solid #b8b8b8;
+	}
+}
+
+.tovar-card:hover .tovar-card__popup-btn {
+	opacity: 1;
+}
+
+	

@@ -1,0 +1,161 @@
+@import "variables.less";
+@import "scaffolding.less";
+
+
+@import "blocks/main-header.less";
+@import "blocks/basket-count.less";
+@import "blocks/social.less";
+@import "blocks/main-footer.less";
+@import "blocks/btn.less"; 
+@import "blocks/input.less";
+@import "blocks/first-screen.less";
+@import "blocks/main-map.less";
+@import "blocks/main-news.less";
+@import "blocks/block-new-prev.less";
+@import "blocks/main-video.less";
+@import "blocks/page-block.less";
+@import "blocks/tovar-nav.less";
+@import "blocks/tovars.less";
+@import "blocks/slider.less";
+@import "blocks/tovar.less";
+
+/*@import "blocks/breadcrumbs.less";*/
+
+
+
+.hidden {
+	display: none;
+}
+ 
+
+.wrapper-x {
+	overflow: hidden !important;
+	min-height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+.wrapper-y {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0 0 @height-footer 0;
+	min-height: 100vh;
+}
+
+.clerfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+
+.cont-fluid() {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 0px;
+	margin: 0 auto;
+
+	@media @tablet-widths {
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	@media @mobil-widths {
+		width: auto;
+		text-align: center;
+		min-width: 320px;
+		padding: 0 20px 30px;
+	}
+
+}
+
+@media @tablet-widths {
+		
+}
+
+@media @mobil-widths {
+
+}
+
+.box-top-shadow() {
+	width: 110%;
+	margin-left: -5%;
+	margin-right: -5%;
+	box-shadow: inset 0 15px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.futura-reg(@size) {  
+  font-family: 'futuraregular', sans-serif;
+  font-size: @size; 
+  
+}
+
+.futura-bold(@size) {  
+  font-family: 'futurabold', sans-serif;
+  font-size: @size; 
+  
+}
+
+.open-sans(@size) {  
+  font-family: 'OpenSansRegular', sans-serif;
+  font-size: @size; 
+  
+}
+.open-sans-bold(@size) {  
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: @size; 
+  
+}
+
+.bebas(@size) {  
+ font-family: 'bebas_neueregular', sans-serif;
+  font-size: @size; 
+  
+}
+
+.helv-reg(@size) {  
+ font-family: 'helveticaneuecyrroman', sans-serif;
+  font-size: @size; 
+  
+}
+
+.helv-bold(@size) {  
+ font-family: 'helveticaneuecyrbold', sans-serif;
+  font-size: @size; 
+  
+}
+
+.helv-thin(@size) {  
+ font-family: 'helveticaneuecyrthin', sans-serif;
+  font-size: @size; 
+  
+}
+
+.roboto-reg(@size) {
+	font-family: 'RobotoRegular', sans-serif;
+  	font-size: @size; 
+}
+
+.roboto-bold(@size) {
+	font-family: 'RobotoBold', sans-serif;
+  	font-size: @size; 
+}
+
+
+
+
+.sepia() { 
+    filter: sepia(100%);
+   }
+.engrave() { 
+    filter: grayscale(100%);
+}
+
+.shadow() {
+	filter: drop-shadow(0px 0px 10px rgba(133, 37, 76, 0.25));
+}
+
+ 

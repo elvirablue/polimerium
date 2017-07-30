@@ -1,0 +1,76 @@
+.page-block {
+	.cont-fluid();
+
+	&__back {
+		display: block;
+		width: 200px;
+		height: 100px;
+		.bebas(30px);
+		padding-top: 60px;
+		color: @color-text-b;
+		@media @tablet-widths {
+			
+			padding-top: 30px;	
+			
+		}
+
+		@media @mobil-widths {
+			height: 70px;
+			font-size: 24px;
+			text-align: left;
+		}
+
+		transition: color ease 0.3s;
+		i {
+			.open-sans(40px);
+			font-style: normal;
+			padding-right: 10px;
+			text-decoration: none;
+			color: inherit;
+			@media @mobil-widths {font-size: 32px}
+		}
+	}
+
+	&__back:hover, &__back:active, &__back:focus {
+		color: @color-yellow;
+		text-decoration: none;
+		i {
+			text-decoration: none;
+		}
+
+	}
+
+
+	&__head {
+		width: 100%;
+		height: 150px;
+		.helv-thin(52px);
+		padding-top: 85px;
+		color: @color-text-b;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #000;
+
+		@media @tablet-widths {
+			height: 120px;
+			padding-top: 60px;
+			font-size: 48px;
+			text-align: left;
+		}
+
+		@media @mobil-widths {
+			height: 80px;
+			padding-top: 40px;
+			font-size: 28px;
+			text-align: center;
+			font-weight: bold;
+		}
+	}
+
+	&__head.tovars {
+		background: url("../img/bg-page-title-tovars.svg") no-repeat 0 90% ;
+
+		@media @mobil-widths {
+			background-image: none;
+		}
+	}
+}

@@ -1,0 +1,161 @@
+.main-footer-bg {
+	background-color: @color-bg-black;
+	margin-top: -@height-footer;
+	height: @height-footer;
+	padding-top: 40px;
+	.box-top-shadow();
+}
+
+.main-footer {
+	.cont-fluid();
+	.clerfix();
+	padding: 0 115px;
+
+	@media @tablet-widths {
+		padding: 0 70px;	
+	}
+
+	@media @mobil-widths {
+		padding: 0 50px;
+	}
+
+	&__left {
+		display: block;
+		width: 43%;
+		float: left;
+		text-align: left;
+		height: 335px;
+
+		@media @mobil-widths {
+			display: none;
+		}
+
+
+	}
+
+	&__right {
+		display: block;
+		width: 43%;
+		height: 335px;
+		float: right;
+		text-align: left;
+
+		.wrapper{			
+			max-width: 320px;			
+		}
+
+		@media @mobil-widths {
+			width: 100%;
+			height: 300px;
+			text-align: center;
+
+			.wrapper{
+				width: 100%;				
+				margin: 0 auto;
+			}
+		}
+	}
+
+	&__social {
+		text-align: right;
+		.social {
+			border-color: #fff;
+			background-image: url("../img/ico-sprite-w.png");
+		}
+
+		.social:hover {
+			border-color: #979ba2;
+			background-image: url("../img/ico-sprite.png");
+		}
+	}
+
+	&__title {
+		.helv-thin(18px);
+		font-weight: bold;
+		color: @color-text-w;
+		padding-bottom: 35px;
+	}
+
+	&__text, &__author {
+		.helv-thin(16px);
+		color: @color-text-w;
+	}
+
+	&__author {
+		padding-top: 20px;
+		text-align: right;
+	}
+
+	.contact-address {
+		text-align: left;
+		margin-left: 30px;
+		margin-bottom: 70px;
+		position: relative;
+		.ico-absolute(-144px, -12px);
+	}
+
+	.contact-phone {
+		text-align: left;
+		margin-left: 30px;
+		margin-bottom: 40px;
+		position: relative;
+		.ico-absolute(-177px, -12px);
+	}
+
+	.contact-mail {
+		text-align: left;
+		margin-left: 30px;
+		margin-bottom: 20px;
+		position: relative;
+		.ico-absolute(-209px, -10px);
+	}
+	
+}
+
+.main-footer-bottom {
+	width: 100%;
+	background-color: #000;
+	min-height: 55px;
+
+	
+	
+
+	.wrapper {
+		.cont-fluid();
+		.clerfix;
+		padding: 0 30px;
+
+		@media @tablet-widths {
+			padding: 0 60px;
+			height: 120px;	
+		}
+
+		@media @mobil-widths {
+			padding: 0 20px;
+		}
+
+		.copy {
+			float: left;
+			.open-sans(11px);
+			line-height: 55px;
+			white-space: nowrap;
+			color: #dddddd;
+
+			@media @mobil-widths {
+				width: 100%;
+				text-align: center;
+				line-height: 120px;
+			}
+
+		}
+
+		.footer-nav {
+			float: right;
+
+			@media @mobil-widths {
+				display: none;
+			}
+			
+		}
+	}
+}

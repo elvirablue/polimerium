@@ -1,0 +1,136 @@
+.slider-title-wr {
+    .clerfix();
+    padding-bottom: 5px;
+    border-bottom: 3px solid #000;
+}
+
+.slider-title {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    .bebas(24px);
+    color: @color-text-b;
+
+}
+
+.slider-nav {
+    display: block;
+    float: right;
+    padding: 0;
+    margin: 0;
+    .roboto-reg(24px);
+    color: @color-text-b;
+    margin-top: -40px;
+     @media (max-width: 620px) {
+        display: none;
+     }
+
+    
+}
+
+.slider {
+	position: relative;
+    width: 1188px;    
+    height: 390px;    
+    margin: 0 auto; 
+
+   @media @tablet-widths {width: 891px;}
+    @media (max-width: 920px) {width: 594px;}
+    @media (max-width: 620px) {width: 281px;}    
+
+}
+
+
+
+.frame { 
+    display: block;
+    margin: 0 auto;   
+    
+    height: 390px;
+    
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;    
+        
+}    
+	
+	.slides {
+		display: block;
+		width: 99999px;
+		height: 100%;
+	          
+	}
+
+
+.frame-tovar {
+    width: 1200px;
+
+    @media @tablet-widths {width: 891px;}
+    @media (max-width: 920px) {width: 594px;}
+    @media (max-width: 620px) {width: 281px;}
+}
+
+
+
+
+@media (max-width: 1120px) {
+    
+    .slider_letters {
+        width: 782px;
+    }
+    .slider_letters .frame.frame--letters {
+        width: 780px;    
+    }      
+}
+
+
+@media (max-width: 910px) {
+    .slider_letters {
+        width: 522px;
+    }
+    .slider_letters .frame.frame--letters {
+        width: 520px;    
+    }      
+}
+
+@media (max-width: 600px) {
+    .slider_letters {
+        width: 276px;
+    }
+    .slider_letters .frame.frame--letters, 
+    .slider_letters .frame.frame--letters .slides li {
+        width: 274px;
+    }   
+}
+
+
+
+
+
+
+.prev, .next {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -3px;
+    .roboto-reg(30px);
+    cursor: pointer;
+    padding: 0 10px;
+
+    @media @mobil-widths {}
+}
+
+.next {
+    
+    @media @tablet-widths { }
+
+}
+
+.prev {
+    
+    @media @tablet-widths {}
+}
+
+
+

@@ -1,0 +1,123 @@
+.main-header-bg {
+	background-color: @color-bg-black;
+	height: @nav-min-height;	
+}
+
+.logo {
+	display: block;
+	width: 265px;
+	height: 90px;
+	background: url("../img/logo-w.svg") no-repeat center;
+	background-size: auto;
+}
+
+
+.main-header {
+	.cont-fluid();
+	
+	.clerfix();
+	position: relative;
+	z-index: 100;
+
+
+	&__logo {
+		display: block;
+		width: 280px;
+		height: auto;
+		padding: 5px;
+		border-right: 1px solid #2e3034;
+		float: left;
+
+
+		@media @tablet-widths {
+			width: 150px;			
+
+			.logo {
+				width: 140px;				
+				background-size: contain;
+			}			
+		}
+
+		@media (max-width: 992px) {
+			position: absolute;
+			z-index: 101;
+			top: 5px;
+			left: 10px;			
+			border-right: none;
+
+			.logo {				
+				height: 25px;
+			}
+		}
+
+		@media @mobil-widths {
+
+			.logo {
+				min-width: 100px;
+				width: 35vw;
+				height: 30px;
+			}
+		}
+		
+	}
+
+	&__center {
+		float: right;
+		width: ~'calc(100% - 285px)';
+		text-align: center;
+
+
+
+		@media @tablet-widths {
+			width: ~'calc(100% - 255px)';
+		}
+
+		@media (max-width: 992px) {
+			width: 100%;
+		}
+
+		@media @mobil-widths{
+			text-align: right;
+			
+		}
+
+	}
+
+	&__basket {
+		display: inline-block;
+		vertical-align: top;
+		width: 75px;
+		height: @nav-min-height;
+		
+		border-left: 1px solid #2e3034;
+
+		@media @mobil-widths{
+			width: 60px
+		}
+	}
+
+	&__social {
+		display: inline-block;
+		vertical-align: top;
+		width: 150px;
+		height: @nav-min-height;
+		border-left: 1px solid #2e3034;
+		text-align: center;
+		@media @tablet-widths {
+			width: 120px;
+		}
+
+		@media @mobil-widths {
+			width: 120px;
+			margin-right: -20px;
+			.social {
+				
+			}
+		}
+
+		.social:hover {
+			border-color: #fff;
+			background-image: url("../img/ico-sprite-w.png");
+		}
+	}
+}
