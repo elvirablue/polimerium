@@ -11,11 +11,12 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
 
 	<link rel="stylesheet" href="css/venders/normalize.css">
+	<link rel="stylesheet" href="css/venders/animate.css">
 	<link rel="stylesheet" href="css/stylename.css">
 	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/menu.css">
-	<link href="css/brand.css" rel="stylesheet"/>	
+	<link rel="stylesheet" href="css/simple.css">	
 	
 
 	<!-- jQuery -->
@@ -110,8 +111,8 @@
 				</form>
 
 				<p>
-					<i class="first-screen__code-btn">Где находится код на упаковке? |</i>
-					<i class="first-screen__code-btn"> Почему -ARMPACK- невозможно подделать?</i>
+					<i class="first-screen__code-btn js-btn-modal-1">Где находится код на упаковке? |</i>
+					<i class="first-screen__code-btn js-btn-modal-2"> Почему ARMPACK- невозможно подделать?</i>
 				</p>
 			</div>
 
@@ -328,12 +329,22 @@
 	
 
 <!-- ************** БЛОК МОДАЛЬНЫЕ ОКНА ******************- -->
-
+	<div class="modal_wrapper">  </div>
+	<div class="modal js-modal">	  
+	    <button class="modal_close" type="button">Закрыть</button>
+	    <h3 id="modal_title">Почему ARMPACK- невозможно подделать?</h3>
+	    <div id="modal_text">
+	    	<p>1. ARM PACK - на каждом продукте свой уникальный одноразовый код, тоесть если код был введен один раз - то больше воспользоваться им не возможно, соответственно "клонирование" кодов не возможно.</p>
+	    	<p>2. На этапах перевозки продукции и распространения, списать или скопировать код не возможно, он защищен специальным скретч покрытием, которое можно стереть только один раз.</p>
+	    	<p>3. Все оригинальные одноразовые коды с продуктов надежно хранятся в защищенной веб-базе POLYMERIUM и доступ к ним есть только у нескольких ответственных лиц компании.</p>
+	    </div>
+	  </div>
+	</div>
 
 <!-- ********************************- -->
 </div> <!-- end wrapper-x -->
 
-
+<script src="js/modal.js"> </script>
 <script src="js/script.js"> </script>
 <!--<script src="js/venders/wow.min.js"></script>
 <script src="js/wow.js"></script>
