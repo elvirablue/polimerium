@@ -32,17 +32,22 @@
 .main-header label:before {
 	font:inherit;
 	content: "\2630";
+	width: 22px;
 	padding-right: 5px;
 	display: inline-block;
 	vertical-align: top;
 }
 
-#nav-trigger:checked + .main-nav {
+#nav-trigger:checked ~ .main-nav {
 	display: inline-block;
 }
 
 #nav-trigger:checked + label[for="nav-trigger"] {
-	color: #000 !important;
+	color: #fff !important;
+}
+
+#nav-trigger:checked + label[for="nav-trigger"]:before {
+	content: "\2716 " !important;	
 }
 
 .mobil-check:hover, .mobil-check:active {
