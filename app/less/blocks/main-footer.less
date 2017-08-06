@@ -10,6 +10,7 @@
 	.cont-fluid();
 	.clerfix();
 	padding: 0 115px;
+	position: relative;
 
 	@media @tablet-widths {
 		padding: 0 70px;	
@@ -58,6 +59,20 @@
 
 	&__social {
 		text-align: right;
+		display: block;
+		width: 45%;
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+
+		@media @mobil-widths {
+			width: 100%;
+			text-align: center;
+			left: 0;
+			right: 0;
+			bottom: -15px;
+		}
+
 		.social {
 			border-color: #fff;
 			background-image: url("../img/ico-sprite-w.png");
@@ -92,6 +107,7 @@
 		margin-bottom: 70px;
 		position: relative;
 		.ico-absolute(-144px, -12px);
+		@media @mobil-widths {margin-bottom: 40px;}
 	}
 
 	.contact-phone {
@@ -100,6 +116,7 @@
 		margin-bottom: 40px;
 		position: relative;
 		.ico-absolute(-177px, -12px);
+		@media @mobil-widths {margin-bottom: 20px;}
 	}
 
 	.contact-mail {

@@ -21,17 +21,18 @@
 	text-transform: uppercase;	
 	display: none;
   	position: absolute;
-  	top: 60px;
+  	top: 20px;
   	left: 20px;
   	text-align: left;
 	font-family: 'OpenSansRegular', sans-serif;
-  	font-size: 16px;
+  	font-size: 0px;
   	color: #ffc700;
   	font-weight: lighter;
 }
 
 .main-header label:before {
-	font:inherit;
+	font-family: 'OpenSansRegular', sans-serif;
+	font-size: 22px;
 	content: "\2630";
 	width: 22px;
 	padding-right: 5px;
@@ -76,13 +77,13 @@
 	.main-nav {
 		display: none;
 		position: absolute;
-		top: 100px;
+		top: 70px;
 		left: 0;
 		right: 0;
 		width: 100vw;
 		margin-left: 0;
 		background-color: #121315;
-		height: calc(100vh - 100px);
+		height: calc(100vh - 70px);
 		border-top: 1px solid #2e3034;
 	}	
 }

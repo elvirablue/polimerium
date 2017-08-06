@@ -135,6 +135,11 @@ a {
   background-color: #121315;
   height: 100px;
 }
+@media (max-width: 768px) {
+  .main-header-bg {
+    height: 70px;
+  }
+}
 .logo {
   display: block;
   width: 265px;
@@ -199,10 +204,14 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .main-header__logo {
+    left: 60px;
+  }
   .main-header__logo .logo {
     min-width: 100px;
-    width: 35vw;
-    height: 30px;
+    max-width: 200px;
+    width: 45vw;
+    height: 50px;
   }
 }
 .main-header__center {
@@ -236,7 +245,7 @@ a {
 }
 @media (max-width: 768px) {
   .main-header__basket {
-    width: 60px;
+    height: 70px;
   }
 }
 .main-header__social {
@@ -254,6 +263,7 @@ a {
 }
 @media (max-width: 768px) {
   .main-header__social {
+    display: none;
     width: 120px;
     margin-right: -20px;
   }
@@ -270,6 +280,11 @@ a {
   position: relative;
   cursor: pointer;
   background: url("../img/ico-sprite.png") -5px 30px no-repeat;
+}
+@media (max-width: 768px) {
+  .basket-count {
+    background-position: -5px 20px;
+  }
 }
 .basket-count i {
   display: block;
@@ -288,6 +303,12 @@ a {
   background-color: #ffc700;
   text-align: center;
   font-style: normal;
+}
+@media (max-width: 768px) {
+  .basket-count i {
+    top: 15px;
+    left: 30px;
+  }
 }
 .social {
   display: inline-block;
@@ -324,6 +345,7 @@ a {
   padding: 0 0px;
   margin: 0 auto;
   padding: 0 115px;
+  position: relative;
 }
 @media (max-width: 1200px) {
   .main-footer {
@@ -389,6 +411,20 @@ a {
 }
 .main-footer__social {
   text-align: right;
+  display: block;
+  width: 45%;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .main-footer__social {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+  }
 }
 .main-footer__social .social {
   border-color: #fff;
@@ -431,6 +467,11 @@ a {
   height: 22px;
   background: url("../img/ico-sprite-w.png") -144px -12px no-repeat;
 }
+@media (max-width: 768px) {
+  .main-footer .contact-address {
+    margin-bottom: 40px;
+  }
+}
 .main-footer .contact-phone {
   text-align: left;
   margin-left: 30px;
@@ -446,6 +487,11 @@ a {
   width: 22px;
   height: 22px;
   background: url("../img/ico-sprite-w.png") -177px -12px no-repeat;
+}
+@media (max-width: 768px) {
+  .main-footer .contact-phone {
+    margin-bottom: 20px;
+  }
 }
 .main-footer .contact-mail {
   text-align: left;
@@ -611,9 +657,9 @@ select {
   outline: none;
   border: none;
   margin: -2%;
-  width: 105%;
+  width: 110%;
   height: 120%;
-  padding-left: 30px;
+  padding-left: 20px;
   background-color: transparent;
 }
 select option {
