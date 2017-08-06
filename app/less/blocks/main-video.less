@@ -19,7 +19,20 @@
 
 	h3 {
 		color: @color-text-w;
-		padding: 30px  0;
+		padding: 20px  0;
+	}
+
+	&__title {
+		color: @color-text-w;
+		padding: 10px 0 10px;
+		.helv-bold(33px);
+		
+		span {font: inherit; .helv-reg(33px);}
+
+		@media @mobil-widths {
+			font-size: 24px;
+			span {font-size: 24px;}
+		}
 	}
 	
 
@@ -27,7 +40,7 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 15px;
-		height: 415px;
+		height: 455px;
 		margin-top: -55px;
 		background-color: @color-yellow;
 
@@ -35,6 +48,18 @@
 			display: none;	
 		}
 		
+	}
+
+	&__link {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		padding: 30px;
+		height: 220px;
+
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 
 	.block-center-video {
@@ -63,7 +88,7 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 220px;
-		height: 360px;
+		height: 395px;
 		padding-left: 25px;
 		padding-top: 25px;
 		background: url("../img/bg-video-1.jpg") no-repeat top center;

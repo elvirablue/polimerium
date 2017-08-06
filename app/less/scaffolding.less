@@ -106,6 +106,10 @@ a {
 .sticky-wrapper {
 	position: relative;
 	z-index: 10000;
+
+	@media @mobil-widths {
+		position: static !important;
+	}
 }
 
 
@@ -147,7 +151,7 @@ a {
 	
 	text-decoration: underline;
 
-	transition: color ease 0.3s;
+	transition: color ease 0.2s;
 	
 }
 

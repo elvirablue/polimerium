@@ -22,8 +22,8 @@ Copyright (c) 2014 Daniel Eden
 .animated.hinge,
 .animated.fadeIn,
 .animated.fadeInUp {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .animated.flipOutX,
@@ -1154,8 +1154,8 @@ Copyright (c) 2014 Daniel Eden
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 3s;
-  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -1462,8 +1462,8 @@ Copyright (c) 2014 Daniel Eden
 }
 
 .fadeOut {
-  -webkit-animation: fadeOut 0.5s;
-  animation: fadeOut 0.5s;
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
 }
 
 @keyframes fadeOutDown {

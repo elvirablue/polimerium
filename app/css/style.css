@@ -80,6 +80,11 @@ a {
   position: relative;
   z-index: 10000;
 }
+@media (max-width: 768px) {
+  .sticky-wrapper {
+    position: static !important;
+  }
+}
 .yellow {
   color: #ffc700;
 }
@@ -87,8 +92,8 @@ a {
   display: inline-block;
   margin: 0.8rem;
   text-decoration: underline;
-  -webkit-transition: color ease 0.3s;
-  transition: color ease 0.3s;
+  -webkit-transition: color ease 0.2s;
+  transition: color ease 0.2s;
 }
 .link:hover,
 .link:active,
@@ -567,8 +572,8 @@ a {
   cursor: pointer;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: background-color ease 0.3s, border-color ease 0.3s;
-  transition: background-color ease 0.3s, border-color ease 0.3s;
+  -webkit-transition: background-color ease 0.2s, border-color ease 0.2s;
+  transition: background-color ease 0.2s, border-color ease 0.2s;
 }
 .btn-circle:hover,
 .btn-circle:active,
@@ -605,9 +610,9 @@ a {
 select {
   outline: none;
   border: none;
-  margin: -2px;
+  margin: -2%;
   width: 105%;
-  height: 102%;
+  height: 120%;
   padding-left: 30px;
   background-color: transparent;
 }
@@ -966,8 +971,8 @@ select option {
   opacity: 0;
   background: url("../img/bg-first-screen-tovar.jpg") no-repeat top center;
   background-size: cover;
-  -webkit-transition: opacity ease-out 1s;
-  transition: opacity ease-out 1s;
+  -webkit-transition: opacity ease-out 0.5s;
+  transition: opacity ease-out 0.5s;
 }
 @media (max-width: 1200px) {
   .prod-block__popup {
@@ -1226,17 +1231,23 @@ select option {
   max-height: 47px;
   overflow: hidden;
   text-align: left;
+  padding-left: 4px;
+  position: relative;
 }
 .block-new-prev__title:before {
   content: "";
   display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 4px;
   width: 2px;
-  height: 15px;
+  height: 18px;
   background-color: #ffc700;
-  margin-right: 3px;
 }
 .block-new-prev__text {
   padding-top: 10px;
+  padding-left: 4px;
   text-align: left;
 }
 .block-new-prev__text * {
@@ -1253,8 +1264,8 @@ select option {
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: color ease 0.3s;
-  transition: color ease 0.3s;
+  -webkit-transition: color ease 0.2s;
+  transition: color ease 0.2s;
 }
 .block-new-prev__link:hover,
 .block-new-prev__link:active {
@@ -1304,13 +1315,32 @@ select option {
 }
 .main-video h3 {
   color: #fff;
-  padding: 30px  0;
+  padding: 20px  0;
+}
+.main-video__title {
+  color: #fff;
+  padding: 10px 0 10px;
+  font-family: 'helveticaneuecyrbold', sans-serif;
+  font-size: 33px;
+}
+.main-video__title span {
+  font: inherit;
+  font-family: 'helveticaneuecyrroman', sans-serif;
+  font-size: 33px;
+}
+@media (max-width: 768px) {
+  .main-video__title {
+    font-size: 24px;
+  }
+  .main-video__title span {
+    font-size: 24px;
+  }
 }
 .main-video .block-left-yellow {
   display: inline-block;
   vertical-align: top;
   width: 15px;
-  height: 415px;
+  height: 455px;
   margin-top: -55px;
   background-color: #ffc700;
 }
@@ -1318,6 +1348,16 @@ select option {
   .main-video .block-left-yellow {
     display: none;
   }
+}
+.main-video__link {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 30px;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-video .block-center-video {
   display: inline-block;
@@ -1341,7 +1381,7 @@ select option {
   display: inline-block;
   vertical-align: top;
   width: 220px;
-  height: 360px;
+  height: 395px;
   padding-left: 25px;
   padding-top: 25px;
   background: url("../img/bg-video-1.jpg") no-repeat top center;
@@ -1425,8 +1465,8 @@ select option {
   font-size: 30px;
   padding-top: 60px;
   color: #000;
-  -webkit-transition: color ease 0.3s;
-  transition: color ease 0.3s;
+  -webkit-transition: color ease 0.2s;
+  transition: color ease 0.2s;
 }
 @media (max-width: 1200px) {
   .page-block__back {
@@ -1585,6 +1625,11 @@ select option {
   padding: 45px 17px 30px;
   border-bottom: 1px solid #d9d9d9;
 }
+@media (max-width: 768px) {
+  .tovar-item {
+    height: auto;
+  }
+}
 .tovar-item-slider {
   position: relative;
   display: inline-block;
@@ -1617,8 +1662,8 @@ select option {
   opacity: 0;
   cursor: pointer;
   overflow: hidden;
-  -webkit-transition: opacity ease-out 0.5s, color ease-out 0.3s;
-  transition: opacity ease-out 0.5s, color ease-out 0.3s;
+  -webkit-transition: opacity ease-out 0.3s, color ease-out 0.15s;
+  transition: opacity ease-out 0.3s, color ease-out 0.15s;
 }
 .tovar-card__popup-btn::after {
   content: "";
@@ -1640,10 +1685,16 @@ select option {
   font-size: 15px;
   background-color: #000;
   border-left: 1px solid #333333;
-  border-rigt: 1px solid #333333;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .tovar-card__popup-btn .popup-btn {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333333;
+  }
 }
 .tovar-card__popup-btn .popup-btn:hover,
 .tovar-card__popup-btn .popup-btn:active,
@@ -1706,7 +1757,7 @@ select option {
 }
 @media (max-width: 620px) {
   .slider-nav {
-    display: none;
+    margin-top: 0px;
   }
 }
 .slider {
@@ -2002,6 +2053,7 @@ select option {
 @media (max-width: 768px) {
   .tovar__tabs .toggle {
     padding-top: 30px;
+    padding-bottom: 10px;
   }
 }
 .tovar__tabs .toggle label {
@@ -2025,8 +2077,8 @@ select option {
   font-size: 26px;
   font-weight: normal;
   color: #000;
-  -webkit-transition: border-color ease 0.3s;
-  transition: border-color ease 0.3s;
+  -webkit-transition: border-color ease 0.2s;
+  transition: border-color ease 0.2s;
   border-bottom: 5px solid transparent;
   font-style: normal;
   padding-bottom: 5px;

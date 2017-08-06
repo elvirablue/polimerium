@@ -46,7 +46,7 @@ $(document).on('ready', function(){
                 setTimeout(function(){
                       popup.classList.remove('show', 'zoomIn' );      
                       popup_wrapper.classList.remove('show', 'fadeIn');
-                }, 300);
+                }, 200);
                 
           };
           
